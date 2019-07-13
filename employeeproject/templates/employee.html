@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dhamodar IT solutions</title>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    #con{background-color: skyblue}
+    #k{background: red}
+
+    label{font-size: 20px;font-family: "Century Schoolbook";background-color: pink}
+</style>
+<body>
+<div id="con" class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1 id="k" class="text-center">MACHA IT SERVICES</h1>
+            <form method="post">
+                {% csrf_token %}
+                <label>Enter Your Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Rey macha name cheppara" autofocus>
+
+                <label >Enter your location</label>
+                <input type="text" name="location" class="form-control" placeholder="Rey macha me vuru cheppara ">
+
+                <label >Enter your email id</label>
+                <input type="email" name="email" class="form-control" placeholder="Rey macha email  cheppara " >
+                <label >Enter your mobile no</label>
+                <input type="number" name="mobile" class="form-control" placeholder="Rey macha phone no cheppara ">
+                <label >Enter your username</label>
+                <input type="text" name="username" class="form-control" placeholder="Rey macha username cheppara" >
+                <label>Enter your password</label>
+                <input type="password" name="password" class="form-control" placeholder="rey macha password enter cheyra">
+                <center>
+                    <input type="submit" value="macha ok na" class="btn btn-success" class="margin-top:-10px">
+                    <input type="reset" value="macha vaddu macha" class="btn btn-danger" class="margin-top:-10px">
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
